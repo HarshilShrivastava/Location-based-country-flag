@@ -1,0 +1,55 @@
+<html>
+<link href="css/addons/flag.min.css" rel="stylesheet">
+
+    <body onload="function()" >
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$.get('http://ip-api.com/json', function(data) {
+    console.log(data.country)
+     document.getElementById("flag").className = data.country +" flag";
+})
+
+</script>
+<h1>hello</h1>
+<i id="flag"></i>
+<html>
+<link href="css/addons/flag.min.css" rel="stylesheet">
+<body onload="function()" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$.get('http://ip-api.com/json', function(data) {
+    console.log(data.country)
+     document.getElementById("flag").className = data.country +" flag";
+})
+</script>
+<style>
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+input,
+label {
+    margin: .4rem 0;
+}
+</style>
+
+
+<h1>hello</h1>
+<i id="flag"></i>
+<label for="phone">Enter your phone number:</label>
+
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  required>
+<small>Format: 123-456-7890</small>
+    </body>
+</html>
+
+
+
+
+    </body>
+</html>
+
+
+
